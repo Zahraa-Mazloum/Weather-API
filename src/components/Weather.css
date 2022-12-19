@@ -1,0 +1,19 @@
+.weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    margin-bottom: 40px;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .weather>img{
+      height: 200px;
+    }
+    
+  
+  }
+  

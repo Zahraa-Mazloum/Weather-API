@@ -17,15 +17,6 @@ main{
 .title{
   margin: 0;
 }
-.weather{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 10px;
-  margin-bottom: 40px;
-
-}
 .firsttitle{
   font-size: x-large;
 }
@@ -39,72 +30,3 @@ main{
 .weather>img{
   height: 500px;
 }
-
-.dayweather {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  column-gap: 15px;
-}
-.tcontainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  margin-bottom: 50px;
-
-}
-
-.tcontainer img{
-  height: 120px;
-}
-
-/*responsive*/
-
-@media only screen and (max-width: 800px) {
-  .dayweather{
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .weather>img{
-    height: 200px;
-  }
-  
-
-}
-
-header{
-  background-color: rgb(117,158,218);
-  padding:20px 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  column-gap: 10px;
-}
-
-button{
-  background-color: rgb(88,121,199);
-  color:rgb(42,60,133);
-  padding: 10px;
-  border: 0;
-  font-family: 'Raleway';
-  font-size: larger;
-}
-
-.searching{
-  background-color: transparent;
-  border: 0;
-  font-size: larger;
-  font-family: 'Raleway';
-  color:white;
-  outline:none;
-
-}
-
-.searching:focus{
-  border-bottom: 1px solid rgb(42,60,133);;
-}
-
-

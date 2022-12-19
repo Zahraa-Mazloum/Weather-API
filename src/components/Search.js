@@ -5,7 +5,25 @@ class Search extends React.Component {
   state = {
     input: ""
   };
-
+  render() {
+    return (
+      <div>
+       <header id="header">
+          <input
+            name="city"
+            type="text"
+            className="searching"
+            onChange={this.handleInputChange}
+            placeholder="Type in a city name"
+          />  
+          <button onClick={this.renderState}>
+            Find Weather
+          </button>
+        
+        </header>
+      </div>
+    );
+  }
 
 }
 export default Search;
