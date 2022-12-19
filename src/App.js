@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-import Search from "./components/Search";
 import mostlycloudly from "./img/weather-icons/mostlycloudy.svg"
 import clear from "./img/weather-icons/clear.svg"
 
@@ -11,8 +10,21 @@ class App extends Component {
     return (
       
       <div className="app">
-     < Search />
-        <main>
+    <div>
+       <header id="header">
+          <input
+            name="city"
+            type="text"
+            className="searching"
+            onChange={this.handleInputChange}
+            placeholder="Type in a city name"
+          />  
+          <button onClick={this.renderState}>
+            Find Weather
+          </button>
+        
+        </header>
+      </div>        <main>
           <div class="weather">
           <img src={mostlycloudly} alt="weather" />
           <p className="title titles">overcast clouds</p>
