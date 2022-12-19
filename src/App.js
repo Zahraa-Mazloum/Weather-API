@@ -13,7 +13,7 @@ class App extends Component {
       <div className="app">
         <Search/>
           <main>
-          <Weather/>
+          <Weather minTemp={10} maxTemp={11} Humi={18} Pressu={1008.48}/>
           <Dayweather />
         </main>
       </div>
