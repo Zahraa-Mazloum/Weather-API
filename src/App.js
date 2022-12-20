@@ -26,7 +26,7 @@ class App extends Component {
             maxT={this.state.allDayW.list[4].main.temp_max}
             humidity={this.state.allDayW.list[4].main.humidity}
             pressure={this.state.allDayW.list[4].main.pressure}
-            src={this.state.allDayW.list[4].weather[0].main.toLowerCase()} />
+            src={this.state.allDayW.list[5].weather[0].main.toLowerCase()} />
 
             
           <Dayweather data={this.state.allDayW.list.slice(5, 12)} />
