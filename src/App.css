@@ -8,7 +8,9 @@ body{
   width: 100%;
   font-family: 'Raleway';
 }
-
+h1 ,h3{
+  text-align: center;
+}
 main{
   background-color: rgb(156,206,244);
   color: rgb(42,60,133);
