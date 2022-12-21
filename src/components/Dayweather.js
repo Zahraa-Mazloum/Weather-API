@@ -13,7 +13,7 @@ class Dayweather extends React.Component {
     render() {
         return (
     <div className="dayweather">
-      {this.props.data.map((e)=> (<Details time={e.dt_txt.slice(10,16)} temp={e.main.temp} key={e.dt_txt}  src={e.weather[0].main}/>))}
+      {this.props.data.map((e)=> (<Details time={e.dt_txt.slice(10,16)} temp={e.main.temp} key={e.dt_txt}  src={e.weather[0].id}/>))}
     </div>
     );
   }
