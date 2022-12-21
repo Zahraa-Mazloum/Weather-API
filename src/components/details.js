@@ -13,57 +13,33 @@ import FakeWeather from "../data/FakeWeather.json";
 import Weather from "./Weather";
 
 class Details extends React.Component {
-    constructor(props){
-      super(props)
-      this.state=FakeWeather
+  constructor(props) {
+    super(props)
 
-      }
-      
-      render(){
-      let image=this.state.list[0].weather[0].main;
-        const imageSrc = (image) => {
-            
-                if (image === "Clouds") return cloudy;
-                else if (image === "Clear") return clear;
-                else if (image === "Mostlycloudy") return mostlycloudy;
-                else if (image === "Partlycloudy") return partlycloudy;
-                else if (image === "Snow") return snow;
-                else if (image === "Storm") return storm;
-                else if (image === "Rain") return rain;
-                else if (image === "Fog") return fog;
-                else if (image === "Drizzle") return drizzle;
-              };
-        return(
-            <div className="tcontainer">
-            <p className="time">{this.props.time}</p>
-            <img src={imageSrc(this.props.src)} width="120" height="120"/>
-            <p className="temp">{Math.round(this.props.temp - 273)} &deg;C</p>
-          </div>
+  }
 
-        );
-      }
+  render() {
+    const imageSrc = (image) => {
+      if (image === "Clouds") return cloudy;
+      else if (image === "Clear") return clear;
+      else if (image === "Mostlycloudy") return mostlycloudy;
+      else if (image === "Partlycloudy") return partlycloudy;
+      else if (image === "Snow") return snow;
+      else if (image === "Storm") return storm;
+      else if (image === "Rain") return rain;
+      else if (image === "Fog") return fog;
+      else if (image === "Drizzle") return drizzle;
+    };
+    return (
+      <div className="tcontainer">
+        <p className="time">{this.props.time}</p>
+        <img src={imageSrc(this.props.src)} width="120" height="120" />
+        <p className="temp">{Math.round(this.props.temp)} &deg;C</p>
+      </div>
 
+    );
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-     
-    }
-
-
-
-
-
-
-
+}
 
 export default Details;

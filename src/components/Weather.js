@@ -21,7 +21,6 @@ class Weather extends React.Component {
         this.state = FakeWeather
     }
     render() {
-        // let image = this.state.list[0].weather[0].main;
         const imageSrc = (image) => {
             if (image === "clouds") return cloudy;
             else if (image === "clear") return clear;
@@ -37,7 +36,7 @@ class Weather extends React.Component {
             <div className="weather">
                 <img src={imageSrc(this.props.src)}  width="450" height="500" /> 
                 <p className="title titles">{this.props.des}</p>
-                <p className="title firsttitle"><b>Temperature</b> {Math.round(this.props.minT - 273)}  &deg;C to {Math.round(this.props.maxT - 273)} &deg;C</p>
+                <p className="title firsttitle"><b>Temperature</b> {Math.round(this.props.minT )}  &deg;C to {Math.round(this.props.maxT )} &deg;C</p>
                 <p className="title medium-title"><b>Humidity</b> {this.props.humidity} % <b>Pressure</b> {this.props.pressure} </p>
             </div>
         );

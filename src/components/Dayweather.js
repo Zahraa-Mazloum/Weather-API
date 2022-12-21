@@ -9,14 +9,11 @@ import Details from "./details";
 class Dayweather extends React.Component {
   constructor(props){
     super(props)
-    this.state={
-      arrWeather:this.props.data
-    }
   }
     render() {
         return (
     <div className="dayweather">
-      {this.state.arrWeather.map((e)=> (<Details time={e.dt_txt.slice(10,16)} temp={e.main.temp} key={e.dt_txt}  src={e.weather[0].main}/>))}
+      {this.props.data.map((e)=> (<Details time={e.dt_txt.slice(10,16)} temp={e.main.temp} key={e.dt_txt}  src={e.weather[0].main}/>))}
     </div>
     );
   }
